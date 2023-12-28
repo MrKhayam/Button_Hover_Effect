@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .button {
+        text-align: center;
+        height: 70px;
+        width: 220px;
+        border-radius: 50px;
+        overflow: hidden;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        cursor: pointer;
+        transition: all 0.4s ease;
+      }
+      .btnContent {
+        transition: all 0.4s;
+        transform: translateY(-60px);
+      }
+      .button:hover .btnContent {
+        transform: translateY(-4px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button">
+      <div class="btnContent">
+        <h1 class="h1">Learn More</h1>
+        <h1 class="h2">Click To</h1>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
